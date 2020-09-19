@@ -1,3 +1,12 @@
+/*For each department, list out the manager who stayed the longest time in the
+department. The list needs to exclude the current manager. Sort the result by
+employ number. The result of query is similar to following table:
+emp_no dept_name
+110022 Marketing
+110085 Finance
+...*/
+
+
 select m.emp_no, d.dept_name 
 from dept_manager m, departments d
 where (m.emp_no, m.dept_no) not in 
