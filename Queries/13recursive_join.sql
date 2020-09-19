@@ -1,3 +1,18 @@
+/*Assuming a title is a node and a promotion is an edge between nodes. e.g.
+And promotion from Engineer to Senior Engineer means their is a path from
+Node ’Engineer’ to Node ’Senior Engineer’. Find out pairs of node of source
+and destination (src, dst) which there is no such path in the database. Sort the
+result by src then dst. The result is shown as following:
+src dst
+Assistant Engineer Assistant Engineer
+Engineer Assistant Engineer
+...
+The result table shows that there is no path from Assistant Engineer to Assistant
+Engineer and neither Engineer to Assistant Engineer. That means there is no
+one have been from Engineer and be promoted/demoted to Assistant Engineer
+(no matter how many times of promotion/demotion) in the database. */
+
+
 WITH recursive TitleCTE AS (
 	select distinct t1.title t1, t2.title t2
 	from titles t1, titles t2 
