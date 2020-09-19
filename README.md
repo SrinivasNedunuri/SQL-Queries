@@ -23,3 +23,12 @@ SQL Queries:
 • DATEDIFF
 • MIN
 • YEAR
+
+# Tables
+1. departments  columms - dept_no, dept_name
+2. dept_emp     columns - emp_no, dept_no, from_date, to_date
+3. dept_manager columns - emp_no, dept_no, from_date, to_date
+4. employees    columns - emp_no, first_name, last_name, birth_date, gender, hire_date
+5. salaries     columns - emp_no, salary, from_date, to_date
+6. titles       columns - emp_no, title, from_date, to_date
+    
