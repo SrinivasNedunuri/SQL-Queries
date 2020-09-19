@@ -1,3 +1,16 @@
+/*Calculate the percentage of number of employees’ current salary is above the
+department current avarage. Sort the result by department name. The result
+is shown as following:
+dept_name above_avg_pect
+Customer Service 44.4988
+Development 46.6018
+...
+As the figure shows, there are 51.9825 % employees in Development department
+has their current salary above the average of current salary in Development
+department.*/
+
+
+
 select q3.dept_name, (cnt1/cnt)*100 above_avg_pect from
  (select *, count(q1.salary) cnt1 from
 (select q1.dept_no, d.dept_name, avg(q1.salary) avg_sal, count(q1.salary) cnt from 
