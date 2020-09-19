@@ -1,3 +1,15 @@
+/*
+Find the employee with highest current salary in each department. Note that
+MAX function is not allowed. Sort the result by department name. Result is
+shown as table below:
+dept_name emp_no salary
+Customer Service 18006 144866
+Development 13386 144434
+...*/
+
+
+
+
 select q2.dept_name, q1.emp_no, q2.salary 
 from (select q1.dept_no, d.dept_name, min(-1 * q1.salary)*(-1) salary 
 	 from (select d.dept_no, d.emp_no, s.salary 
