@@ -26,7 +26,7 @@ SQL Queries:
 
 # Tables
 1. departments  
-        columms - dept_no, dept_name
+        columns - dept_no, dept_name
 2. dept_emp     
         columns - emp_no, dept_no, from_date, to_date
 3. dept_manager 
