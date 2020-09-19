@@ -16,3 +16,10 @@ mysql -t < test employees md5.sql
 or
 mysql -u YOUR MY SQL USER NAME -p < test employees md5.sql
 
+Only following MySQL functions are used during constructing
+SQL Queries:
+• AVG
+• COUNT
+• DATEDIFF
+• MIN
+• YEAR
